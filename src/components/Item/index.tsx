@@ -17,6 +17,7 @@ const Item = ({ item }: Props) => {
             currency: price.currency,
             maximumFractionDigits: price.decimals,
           })}
+          {item.free_shipping && <span className="item__free-shipping"></span>}
         </p>
         <h2 className="item__name">{title}</h2>
       </div>

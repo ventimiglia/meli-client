@@ -28,6 +28,15 @@
   color: $color-text-light;
 }
 
+.item__free-shipping{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: $color-tertiary;
+  margin-left: 10px;
+}
+
 @media (max-width: 768px) {
   .item {
     grid-template-columns: 1fr;
@@ -49,5 +58,10 @@
   .item__address {
     padding-top: 0.5rem;
     font-size: 12px;
+  }
+
+  .item__free-shipping{
+    width: 0.9rem;
+    height: 0.9rem;
   }
 }
