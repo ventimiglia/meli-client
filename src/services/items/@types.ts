@@ -18,4 +18,5 @@ export type Item = {
   picture: string;
   condition: string;
   free_shipping: boolean;
+  seller_address: string;
 }

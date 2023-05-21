@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SearchBox from "../components/SearchBox";
 import ItemsPage from "../pages/Items";
-import ItemDetailPage from "../pages/Item";
+import ItemDetailPage from "../pages/ItemDetail";
+import Header from "../container/Header";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <SearchBox />
+      <Header />
       <Routes>
         <Route path="/" element={<></>} />
         <Route path="/items" element={<ItemsPage />} />

@@ -1,0 +1,26 @@
+@import "../../styles/colors.scss";
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.not-found__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.not-found__message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.not-found__link {
+  font-size: 1.5rem;
+  color: $color-secondary;
+  text-decoration: none;
+}

@@ -1,25 +1,38 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const SearchBar = () => {
+import SearchIcon from "../../assets/icons/search.svg"
+import "./styles.scss";
+
+const SearchBox = () => {
   const [searchValue, setSearchValue] = useState<string>("");
   const navigate = useNavigate();
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if(!searchValue) return;
     navigate(`/items?search=${searchValue}`);
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="search-box__form" onSubmit={onSubmit}>
       <input
         placeholder="Nunca dejes de buscar"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
+        className="search-box__input"
       />
+      <button type="submit" className="search-box__button">
+        <img
+          src={SearchIcon}
+          alt="Buscar"
+          width={20}
+          height={20}
+        />
+      </button>
     </form>
   );
 };
 
-export default SearchBar;
+export default SearchBox;

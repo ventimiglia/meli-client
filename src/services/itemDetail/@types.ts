@@ -18,3 +18,8 @@ export type ItemDetail = {
     description: string;
   }
 }
+
+export const enum Condition {
+  New = "new",
+  Used = "used"
+}

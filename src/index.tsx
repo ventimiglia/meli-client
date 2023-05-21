@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Router from "./routes";
+import { BreadcrumbProvider } from "./contexts/BreadCrumbContext";
 
 const queryClient = new QueryClient();
 
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <Router />
+      <BreadcrumbProvider>
+        <Router />
+      </BreadcrumbProvider>
     </QueryClientProvider>
   </React.StrictMode>
 );

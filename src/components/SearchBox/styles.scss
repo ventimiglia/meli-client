@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.search-box__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-box__input {
+  height: 36px;
+  width: calc(100% - 20px);
+  border-radius: 2px 0px 0px 2px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: $color-text;
+  outline: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  border: 1.5px solid rgba(0,0,0,0);
+  &:focus {
+    border-color: $color-secondary;
+  }
+}
+
+.search-box__button {
+  cursor: pointer;
+  border-radius: 0px 2px 2px 0px;
+  height: 36px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  border: 1.5px solid rgba(0,0,0,0);
+}

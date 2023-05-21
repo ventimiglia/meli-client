@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.item {
+  display: grid;
+  padding: 1rem 0;
+  border-bottom: 1px solid $color-background;
+  grid-template-columns: 150px 1fr 150px;
+}
+
+.item__content-wrapper {
+  padding: 1rem;
+}
+
+.item__price {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: $color-text;
+}
+
+.item__name {
+  font-size: 1.2rem;
+  color: $color-text;
+}
+
+.item__address {
+  padding-top: 1rem;
+  font-size: 14px;
+  color: $color-text-light;
+}
+
