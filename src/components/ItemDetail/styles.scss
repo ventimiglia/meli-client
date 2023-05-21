@@ -53,3 +53,33 @@
   color: $color-text-light;
   line-height: 1.1;
 }
+
+@media (max-width: 768px) {
+  .item-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .item-detail__title {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .item-detail__button {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+
+  .item-detail__price {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .item-detail__description-title {
+    font-size: 24px;
+    margin: 1.5rem 0;
+  }
+
+  .item-detail__description-detail {
+    font-size: 14px;
+  }
+}

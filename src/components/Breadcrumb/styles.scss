@@ -1,12 +1,23 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .breadcrumb {
   display: flex;
   font-size: 14px;
   color: $color-text-light;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .breadcrumb__icon {
   margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .breadcrumb__icon {
+    margin: 0 3px;
+  }
 }
