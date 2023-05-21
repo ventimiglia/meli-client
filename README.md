@@ -10,7 +10,13 @@ Para que la aplicación funcione correctamente, primero se debe levantar de mane
 
 Para esto se debe clonar el siguiente [repositorio](https://github.com/ventimiglia/meli-server) y seguir las instrucciones del README.
 
-Luego de clonarse este mismo proyecto, y teniendo las API's disponibles, ejecutar el comando:
+Luego de clonarse este mismo proyecto, y teniendo las API's disponibles, ejecutar:
+
+### Instalar dependencias
+
+`npm i`
+
+### Levantar proyecto
 
 `npm run start`
 
