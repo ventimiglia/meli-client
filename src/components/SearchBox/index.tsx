@@ -22,13 +22,18 @@ const SearchBox = () => {
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
         className="search-box__input"
-      />
+        aria-label="Ingresá lo que quieras encontrar"
+        maxLength={50}
+        role="search"
+        />
       <button type="submit" className="search-box__button">
         <img
           src={SearchIcon}
           alt="Buscar"
           width={20}
           height={20}
+          aria-label="Buscar"
+          role="button"
         />
       </button>
     </form>

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 
 import type { Items } from "../../services/items/@types";
 import { getItems } from "../../services/items";
-import { useQuery } from "@tanstack/react-query";
 import { useBreadcrumbContext } from "../../contexts/BreadCrumbContext";
 import Breadcrumb from "../../components/Breadcrumb";
 import Main from "../../container/Main";

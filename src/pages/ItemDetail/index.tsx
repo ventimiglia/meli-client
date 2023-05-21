@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
+import { useParams } from "react-router-dom";
 
 import type { ItemDetail as ItemDetailType } from "../../services/itemDetail/@types";
-import { useParams } from "react-router-dom";
 import { getItemDetail } from "../../services/itemDetail";
 import Main from "../../container/Main";
 import Breadcrumb from "../../components/Breadcrumb";

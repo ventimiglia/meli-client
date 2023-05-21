@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <section className="header__container">
-        <Link to="/" className="header__logo"></Link>
+        <Link to="/" className="header__logo" role="button" aria-label="Ir al inicio"/>
         <SearchBox />
       </section>
     </header>
